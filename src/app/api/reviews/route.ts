@@ -1,4 +1,4 @@
-import { AppStoreClient, Country } from "app-store-client";
+import { AppStoreClient } from "app-store-client";
 import { NextRequest, NextResponse } from "next/server";
 import { countryMap } from "@/lib/countryMap";
 
