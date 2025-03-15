@@ -21,6 +21,20 @@ export const metadata: Metadata = {
   keywords: ["アプリ開発", "アイデア発想", "レビュー分析", "ユーザーフィードバック"],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+  openGraph: {
+    title: "アプリアイデア発想ツール",
+    description: "ネガティブレビューからアプリのアイデアを発想するツール",
+    type: "website",
+    url: "https://idea.aha.studio",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "アプリアイデア発想ツール"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
