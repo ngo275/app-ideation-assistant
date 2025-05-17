@@ -19,8 +19,8 @@ export async function GET(request: NextRequest) {
 
     const country = countryMap[countryCode];
 
-    const client = new AppStoreClient({ country, language });
-    const suggestions = await client.getSuggestedSearchTerms({ term });
+  const client = new AppStoreClient({ country, language });
+  const suggestions = await client.suggestedTerms({ term });
 
     return NextResponse.json({ suggestions });
   } catch (error) {
