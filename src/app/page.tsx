@@ -231,7 +231,7 @@ export default function Home() {
       </h1>
       <p className="text-center mb-8">
         <Link href="/suggest" className="text-primary underline">
-          検索サジェストページへ
+          キーワードサジェストページへ
         </Link>
       </p>
 
