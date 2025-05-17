@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -228,6 +229,11 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-8 text-center">
         アプリアイデア発想ツール
       </h1>
+      <p className="text-center mb-8">
+        <Link href="/suggest" className="text-primary underline">
+          検索サジェストページへ
+        </Link>
+      </p>
 
       {/* Toast Notification */}
       {toast && (
