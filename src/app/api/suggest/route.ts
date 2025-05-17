@@ -19,10 +19,10 @@ export async function GET(request: NextRequest) {
 
     const country = countryMap[countryCode];
 
-  const client = new AppStoreClient({ country, language });
-  const suggestions = await client.suggestedTerms({ term });
+    const client = new AppStoreClient({ country, language });
+    const suggestions = await client.suggestedTerms({ term });
 
-    return NextResponse.json({ suggestions });
+    return NextResponse.json({ suggestions: suggestions.map((suggestion) => suggestion.term) });
   } catch (error) {
     console.error("Suggest API error:", error);
     const errorMessage = error instanceof Error ? error.message : "サジェスト取得中にエラーが発生しました";
